@@ -87,7 +87,7 @@ body{
     0%{
         left: -10%;
         top: 600px;
-        transform: rotate(-10deg);
+        transform: rotate(-15deg);
     }
     20%{
         left: 20%;
