@@ -218,7 +218,7 @@ body{
     z-index: 4;
 }
 #packAline > img{
-    width: 30vw;
+    width: 50vw;
 }
 #packJuice{
     transform: translateX(00%);
@@ -288,6 +288,26 @@ body{
         height: 1200px;
     }
 }
+@media screen and (max-width:1440px){
+    #header {
+        height: 800px;
+    }
+    #section{
+        height: 2500px;
+    }
+    #packAline > img{
+        width: 50vw;
+    }
+    #footerShop{
+        height: 700px;
+    }
+    #fooAline3{
+        right: 10%;
+    }
+    #footerStar {
+        top: -250px;
+    }
+}
 @media screen and (max-width:1024px){
     #head-logo{
         top: 100px;
@@ -348,5 +368,93 @@ body{
     }
     #footerStar {
         top: 0;
+    }
+}
+@media screen and (max-width:768px){
+    #head-triangle{
+        border-left: 2500px solid transparent;
+        border-right: 2500px solid transparent;
+    }
+    #head-logo{
+        top: 150px;
+    }
+    #burger{ height: 470px;}
+    #packJuice{
+        width: 40%;
+    }
+    #packBurger{
+        bottom: 0;
+    }
+    #packAline {
+        bottom: -100px;
+    }
+    #footer{
+        height: 800px;
+    }
+    #footerShop {
+        height: 360px;
+    }
+    #fooAline1{
+        width: 25%;
+        top: -40px;
+    }
+    #fooAline2 {
+        left: 35%;
+    }
+    #fooAline3 {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width:425px){
+    #header{
+        height: 400px;
+    }
+    #head-logo{
+        width: 500px;
+        top: 90px;
+    }
+    #section{
+        height: 800px;
+    }
+    .burgerSame{
+        top: 0;
+    }
+    #cucumber {
+        top: 130px;
+    }
+    #tomato{
+        top: 150px;
+    }
+    #patty{
+        top: 180px;
+    }
+    #onion{
+        top: 220px;
+    }
+    #cheese{
+        top: 250px;
+    }
+    #green{
+        top: 270px;
+    }
+    #breadBottom{
+        top: 300px;
+    }
+    #burgerSetbox {
+        height: 200px;
+    }
+    #analien {
+        top: 200px;
+    }
+    #burgersub {
+        top: 300px;
+    }
+    #footer{
+        height: 650px;
+    }
+    #footerShop {
+        height: 200px;
     }
 }
