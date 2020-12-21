@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     background: #313230;
 }
+.opacitya{ opacity: 1 !important; transition: all 0.4s; top: -15px !important;}
 #wrap{
     width: 100%;
     overflow-x: hidden;  
@@ -47,8 +48,8 @@ body{
 #head-triangle{
     width: 0;
     height: 0;
-    border-left: 1500px solid transparent;
-    border-right: 1500px solid transparent;
+    border-left: 3500px solid transparent;
+    border-right: 3500px solid transparent;
     border-bottom: 100vh solid #444842;
     position: absolute;
     top: 300px;
@@ -125,6 +126,7 @@ body{
     height: 1000px;
     top: 0;
     z-index: 10;
+    opacity: 0;
 }
 .burgerSame{
     position: absolute;
@@ -173,30 +175,7 @@ body{
     top: 800px;
 }
 
-#burgerBigtext{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-#burgerBigtext > li{
-    font-size: 10vw;
-    position: absolute;
-    color: #5ec2ae;
-    z-index: 9999;
-    letter-spacing: -0.2rem;
-}
-#thisis{
-    right: 30%;
-    top: 100px;
-}
-#analien{
-    left: 30%;
-    top: 500px;
-}
-#burgersub{
-    right: 30%;
-    top: 800px;
-}
+
 #burgerSetbox{
     width: 100%;
     position: relative;
@@ -284,13 +263,22 @@ body{
         border-left:3500px solid transparent;
         border-right:3500px solid transparent;
     }
+    #head-logo{
+        width: 800px;
+    }
     #footerShop {
         height: 1200px;
+    }
+    #burgerBox > div{
+        width: 1000px;
     }
 }
 @media screen and (max-width:1440px){
     #header {
         height: 800px;
+    }
+    #head-logo{
+        width: 800px;
     }
     #section{
         height: 2500px;
@@ -307,10 +295,16 @@ body{
     #footerStar {
         top: -250px;
     }
+    
+    #burgerBox > div{
+        width: 800px;
+    }
+    
 }
 @media screen and (max-width:1024px){
     #head-logo{
-        top: 100px;
+        top: 0px;
+        width: 800px;
     }
     #header{
         height: 800px;
@@ -342,14 +336,6 @@ body{
     #breadBottom{
         top: 500px;
     }
-    #analien {
-        left: 20%;
-        top: 350px;
-    }
-    #burgersub {
-        right: 20%;
-        top: 600px;
-    }
     #packAline{
         bottom: -225px;
     }
@@ -369,6 +355,10 @@ body{
     #footerStar {
         top: 0;
     }
+    
+    #burgerBox > div{
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px){
     #head-triangle{
@@ -376,7 +366,8 @@ body{
         border-right: 2500px solid transparent;
     }
     #head-logo{
-        top: 150px;
+        top: 0px;
+        width: 800px;
     }
     #burger{ height: 470px;}
     #packJuice{
@@ -403,6 +394,10 @@ body{
     }
     #fooAline3 {
         width: 30%;
+    }
+    
+    #burgerBox > div{
+        width: 100%;
     }
 
 }
@@ -445,16 +440,16 @@ body{
     #burgerSetbox {
         height: 200px;
     }
-    #analien {
-        top: 200px;
-    }
-    #burgersub {
-        top: 300px;
-    }
     #footer{
         height: 650px;
     }
     #footerShop {
         height: 200px;
     }
+    
+    #burgerBox > div{
+        width: 100%;
+    }
 }
+
+
