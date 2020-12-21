@@ -240,10 +240,12 @@ body{
 }
 #footerShop{
     width: 100%;
-    bottom: 250px;
+    bottom: 300px;
     height: 1000px;
     left: 0;
     background: url(../img/store.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #footerStar{
     left: 50%;
@@ -276,4 +278,75 @@ body{
 #fooAline3{
     right: 20%;
     top: 0px;
+}
+@media screen and (max-width:2560px){
+    #head-triangle{
+        border-left:3500px solid transparent;
+        border-right:3500px solid transparent;
+    }
+    #footerShop {
+        height: 1200px;
+    }
+}
+@media screen and (max-width:1024px){
+    #head-logo{
+        top: 100px;
+    }
+    #header{
+        height: 800px;
+    }
+    #section{
+        height: 1500px;
+    }
+    #burger{
+        height: 575px;
+    }
+    #cucumber {
+        top: 150px;
+    }
+    #tomato{
+        top: 200px;
+    }
+    #patty{
+        top: 250px;
+    }
+    #onion{
+        top: 345px;
+    }
+    #cheese{
+        top: 400px;
+    }
+    #green{
+        top: 450px;
+    }
+    #breadBottom{
+        top: 500px;
+    }
+    #analien {
+        left: 20%;
+        top: 350px;
+    }
+    #burgersub {
+        right: 20%;
+        top: 600px;
+    }
+    #packAline{
+        bottom: -225px;
+    }
+    #packAline > img{
+        width: 50vw;
+    }
+    #footerShop {
+        height: 500px;
+    }
+    #fooAline1 {
+        left: 10%;
+    }
+    #fooAline3{
+        right: 0%;
+        top:-45px ;
+    }
+    #footerStar {
+        top: 0;
+    }
 }
