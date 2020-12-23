@@ -1,455 +1,240 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-}
-ul,li{
-    list-style-type: none;
-}
-img{
-    border: 0;
-    padding: 0;
-    margin:0;
-    max-width: 100%;
-}
-body{
-    width: 100%;
-    overflow-x: hidden;
-    background: #313230;
-}
-.opacitya{ opacity: 1 !important; transition: all 0.4s; top: -15px !important;}
+*{ margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{ text-decoration: none;}
+img{ max-width: 100%; border: 0; padding: 0; margin: 0;}
+body{ overflow-x: hidden; background: #8ca7ac;}
+
 #wrap{
-    width: 100%;
-    overflow-x: hidden;  
+    width: 100vw; height:auto;
+    overflow: hidden;
 }
 #header{
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
+    width: 100vw; height: 70vh;
     position: relative;
 }
-#headerLogo{
-    width: 100%;
+#ball{
+    width: 70%; height: 100%;
+    background: url(../img/ball.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
     position: absolute;
-    top: 100px;
-    z-index: 2;
-    left: 0;
-    top: 0;
-}
-#headerLogoBox{
-    width: 100%;
-    position: relative;
-}
-#head-logo{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-}
-#head-triangle{
-    width: 0;
-    height: 0;
-    border-left: 3500px solid transparent;
-    border-right: 3500px solid transparent;
-    border-bottom: 100vh solid #444842;
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-#head-toy{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 400px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#head-toyFly{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.toyFly{
-    position: absolute;
-    width: 200px;
-    z-index: 0;
-}
-.toyFly > img{
-    width: 100%;
-}
-#head-toyCar{
-    left: 0;
-    top: 300px;
-    animation: carmove 15s infinite;
-    transform: rotate(-10deg);
-}
-#head-toyShip{
-    right: 0;
-    top: 400px;
-    animation: shiprmove 3s infinite;
-}
-@keyframes carmove{
-    0%{
-        left: -10%;
-        top: 200px;
-        transform: rotate(10deg);
-    }
-    100%{
-        left: 150%;
-        top: 000px;
-        transform: rotate(5deg);
-    }
-}
-@keyframes shiprmove{
-    0%{
-        right: 0;
-        top: 200px;
-        transform: rotate(-10deg);
-    }
-    100%{
-        right: 200%;
-        top: 0px;
-    }
+    left: 50%; transform: translateX(-50%);
+    top: 10vh; 
 }
 
 #section{
-    width: 100%;
-    height: 3000px;
-    position: relative;
-    background: #444842;
-}
-#burger{
-    width: 100%;
-    position: relative;
-    height: 1000px;
-    top: 0;
-    z-index: 10;
-    opacity: 0;
-}
-.burgerSame{
-    position: absolute;
-    width: 100%;
-    top: -300px;
-}
-#burgerBox > div{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#burgerBox > div > img{
-    width: 100%;
+    width: 100vw; height: 200vh;
 }
 
-#breadTop{
-    z-index: 105;
-    top: 100px;
-}
-#cucumber{
-    z-index: 104;
-    top: 200px;
-}
-#tomato{
-    z-index: 103;
-    top: 300px;
-}
-#patty{
-    z-index: 102;
-    top: 400px;
-}
-#onion{
-    z-index: 101;
-    top: 500px;
-}
-#cheese{
-    z-index: 100;
-    top: 600px;
-}
-#green{
-    z-index: 99;
-    top: 700px;
-}
-#breadBottom{
-    z-index: 98;
-    top: 800px;
-}
-
-
-#burgerSetbox{
-    width: 100%;
+#sectionWrap{
+    width: 100%; height: 100%;
     position: relative;
-    height: 700px;
 }
-#burgerSetbox > div{
+#articleTop{
+    width: 100vw; height: 140vh;
+    position: relative;
+}
+#articleTop > #store{
+    width: 100vw; height: 100%;
+    background: url(../img/store.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 100%;
     position: absolute;
-    left: 50%;
-    
-}
-#packBurger{
-    transform: translateX(-70%);
-    z-index: 3;
-    bottom: -100px;
-}
-#packAline{
-    transform: translateX(-50%);
-    bottom: -400px;
-    z-index: 4;
-}
-#packAline > img{
-    width: 50vw;
-}
-#packJuice{
-    transform: translateX(00%);
+    left: 50%; transform: translateX(-50%);
+    bottom: 0;
     z-index: 1;
 }
 
 
-#footer{
-    width: 100%;
-    height: 1000px;
+#articleTop::before{
+    content: ''; display: block;
+    width: 2000px; height: 2000px;
+    position: absolute; left: 0%; 
+    background: url(../img/airplane.png) no-repeat;
+    animation: round 10s infinite linear;
+    top: 0;
+}
+
+
+@-webkit-keyframes round {
+	100%{-webkit-transform:rotate(-360deg);}
+}
+@-moz-keyframes round {
+	100%{-moz-transform:rotate(-360deg);}
+}
+@-ms-keyframes round {
+	100%{-ms-transform:rotate(-360deg);}
+}
+@keyframes round {
+	100%{transform:rotate(-360deg);}
+}
+
+#articleBottom{
+    width: 100vw; height: 60vh;
+    background-color: #608890;
     position: relative;
-    background: #444842;
-    
+    font-size: 0;
 }
-#footer > div{
+#articleBottom > div{
     position: absolute;
-    overflow: hidden;
-    
 }
-#footerShop{
-    width: 100%;
-    bottom: 300px;
-    height: 1000px;
-    left: 0;
-    background: url(../img/store.png) no-repeat;
+#car{
+    width: 20vw; height:20vh;
+    background:url(../img/car.png) no-repeat;
+    background-size: contain;
     background-position: center;
-    background-size: cover;
+    left: -10%;
+    top: -10vh;
+    z-index: 5;
+    animation: car 10s infinite linear;
 }
-#footerStar{
-    left: 50%;
-    transform: translateX(-10%);
-    top: -500px;
+
+@-webkit-keyframes car {
+	100%{-webkit-transform:translateX(1000%);}
 }
-#footerBottom{
-    bottom: 0;
-    width: 100%;
-    height: 400px;
+@-moz-keyframes car {
+	100%{-moz-transform:translateX(1000%);}
 }
-#footerAlineBox {
-    width: 100%;
-    height: 300px;
+@-ms-keyframes car {
+	100%{-ms-transform:translateX(1000%);}
+}
+@keyframes car {
+	100%{transform:translateX(1000%);}
+}
+
+
+
+
+#burger{
+    width: 50vw; height: 100%;
     position: absolute;
-    bottom: 0;
-    background: #333;
+    left: 20%; bottom: 20vh;
 }
-#footerAlineBox > li {
+#burgerBox{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#burgerBox > li {
     position: absolute;
+    width: 100%; height: 30vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#fooAline1{
-    left: 20%;
-    top: -150px;
+#burTop{
+    background: url(../img/burger_breadTop.png);
+    top: 0; z-index: 9;
 }
-#fooAline2{
-    left: 40%;
-    top: 10px;
+#burCu{
+    background: url(../img/burger_cucumber.png);
+    top: 5vh; z-index: 8;
 }
-#fooAline3{
-    right: 20%;
-    top: 0px;
+#burTom{
+    background: url(../img/burger_tomato.png);
+    top: 10vh; z-index: 7;
 }
-@media screen and (max-width:2560px){
-    #head-triangle{
-        border-left:3500px solid transparent;
-        border-right:3500px solid transparent;
-    }
-    #head-logo{
-        width: 800px;
-    }
-    #footerShop {
-        height: 1200px;
-    }
-    #burgerBox > div{
-        width: 1000px;
-    }
+#burpaty{
+    background: url(../img/burger_patty.png);
+    top: 15vh; z-index: 6;
 }
-@media screen and (max-width:1440px){
-    #header {
-        height: 800px;
-    }
-    #head-logo{
-        width: 800px;
-    }
-    #section{
-        height: 2500px;
-    }
-    #packAline > img{
-        width: 50vw;
-    }
-    #footerShop{
-        height: 700px;
-    }
-    #fooAline3{
-        right: 10%;
-    }
-    #footerStar {
-        top: -250px;
-    }
-    
-    #burgerBox > div{
-        width: 800px;
-    }
-    
+#burOni{
+    background: url(../img/burger_onion.png);
+    top: 20vh; z-index: 5;
 }
-@media screen and (max-width:1024px){
-    #head-logo{
-        top: 0px;
-        width: 800px;
-    }
-    #header{
-        height: 800px;
-    }
-    #section{
-        height: 1500px;
-    }
-    #burger{
-        height: 575px;
-    }
-    #cucumber {
-        top: 150px;
-    }
-    #tomato{
-        top: 200px;
-    }
-    #patty{
-        top: 250px;
-    }
-    #onion{
-        top: 345px;
-    }
-    #cheese{
-        top: 400px;
-    }
-    #green{
-        top: 450px;
-    }
-    #breadBottom{
-        top: 500px;
-    }
-    #packAline{
-        bottom: -225px;
-    }
-    #packAline > img{
-        width: 50vw;
-    }
-    #footerShop {
-        height: 500px;
-    }
-    #fooAline1 {
-        left: 10%;
-    }
-    #fooAline3{
-        right: 0%;
-        top:-45px ;
-    }
-    #footerStar {
-        top: 0;
-    }
-    
-    #burgerBox > div{
-        width: 100%;
-    }
+#burChe{
+    background: url(../img/burger_cheese.png);
+    top: 25vh; z-index: 4;
 }
-@media screen and (max-width:768px){
-    #head-triangle{
-        border-left: 2500px solid transparent;
-        border-right: 2500px solid transparent;
-    }
-    #head-logo{
-        top: 0px;
-        width: 800px;
-    }
-    #burger{ height: 470px;}
-    #packJuice{
-        width: 40%;
-    }
-    #packBurger{
-        bottom: 0;
-    }
-    #packAline {
-        bottom: -100px;
-    }
-    #footer{
-        height: 800px;
-    }
-    #footerShop {
-        height: 360px;
-    }
-    #fooAline1{
-        width: 25%;
-        top: -40px;
-    }
-    #fooAline2 {
-        left: 35%;
-    }
-    #fooAline3 {
-        width: 30%;
-    }
-    
-    #burgerBox > div{
-        width: 100%;
-    }
-
+#burGre{
+    background: url(../img/burger_green.png);
+    top: 30vh; z-index: 3;
 }
-
-@media screen and (max-width:425px){
-    #header{
-        height: 400px;
-    }
-    #head-logo{
-        width: 500px;
-        top: 90px;
-    }
-    #section{
-        height: 800px;
-    }
-    .burgerSame{
-        top: 0;
-    }
-    #cucumber {
-        top: 130px;
-    }
-    #tomato{
-        top: 150px;
-    }
-    #patty{
-        top: 180px;
-    }
-    #onion{
-        top: 220px;
-    }
-    #cheese{
-        top: 250px;
-    }
-    #green{
-        top: 270px;
-    }
-    #breadBottom{
-        top: 300px;
-    }
-    #burgerSetbox {
-        height: 200px;
-    }
-    #footer{
-        height: 650px;
-    }
-    #footerShop {
-        height: 200px;
-    }
-    
-    #burgerBox > div{
-        width: 100%;
-    }
+#burBo{
+    background: url(../img/burger_breadBottom.png);
+    top: 35vh; z-index: 2;
 }
 
 
+
+#aline{
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+#alineBox{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#alineBox > li{
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+#alineOne{
+    background: url(../img/aline5.png);
+    width: 30vw; height: 30vh;
+    left: 10%; top: 0;
+    
+}
+#alineTwo{
+    background: url(../img/aline3.png);
+    width: 30vw; height: 30vh;
+    left: 50%; top: 25vh;
+}
+#alineThr{
+    background: url(../img/aline1.png);
+    width: 10vw; height: 10vh;
+    right: 30%; top: -5vh;
+}
+#alineTir{
+    background: url(../img/aline2.png);
+    width: 20vw; height: 20vh;
+    right: 20%; top: 5vh;
+}
+
+#box{
+    width: 100%; height: 100%;
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    left: 50%; transform: translateX(-50%);
+}
+#setCont{
+    width: 100%; height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#setCont > li{
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+#setBoxbu{
+    width: 30vw; height: 30vh;
+    background: url(../img/pack_burger.png);
+    left: 50%; transform: translateX(-70%);
+    z-index: 1;
+    bottom: -5vh;
+    
+}
+#setBoxju{
+    width: 30vw; height: 50vh;
+    background: url(../img/pack_juice.png);
+    left: 50%; transform: translateX(-40%);
+    z-index: 0;
+    bottom: 1vh;
+    
+}
+
+@media screen and (max-width:800px){
+
+}

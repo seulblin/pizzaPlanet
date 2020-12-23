@@ -15,7 +15,7 @@ window.addEventListener('scroll',function(){
  console.log(scrolls);
 
  if(scrolls > 150){
-    containerOne.classList.add('opacitya');
+   // containerOne.classList.add('opacitya');
  }
 
 });
