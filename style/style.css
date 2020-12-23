@@ -236,5 +236,28 @@ body{ overflow-x: hidden; background: #8ca7ac;}
 }
 
 @media screen and (max-width:800px){
-
+    #setBoxju {
+        width: 35vw; transform: translateX(-30%);
+    }
+    #setBoxbu{
+        width: 50vw; left: 45%;
+    }
+    #alineTwo{
+        left: 60%;
+    }
+    #alineThr{
+        right: 20%;
+    }
+    #alineOne{
+        left: 5%;
+    }
+    #section{
+        height: 100vh;
+    }
+    #articleTop{
+        height: 30vh;
+    }
+    #articleBottom {
+        height: 70vh;
+    }
 }
