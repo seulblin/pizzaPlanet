@@ -115,7 +115,7 @@ window.addEventListener('scroll',function(){
     moMenuChe.style.top = 25 + 'vh';
     moMenuGre.style.top = 30 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
-    moMenuBox.style.bottom = 35+ 'vh';
+    moMenuBox.style.bottom = 30+ 'vh';
   }
   if(mobileScrolls > 600 && mobileScrolls < 700){
     moOne.style.top = 14 + 'vh';
@@ -126,7 +126,7 @@ window.addEventListener('scroll',function(){
     moMenuChe.style.top = 25 + 'vh';
     moMenuGre.style.top = 30 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
-    moMenuBox.style.bottom = 30 + 'vh';
+    moMenuBox.style.bottom = 20 + 'vh';
   }
   if(mobileScrolls > 700 && mobileScrolls < 800){
     moOne.style.top = 21 + 'vh';
@@ -138,17 +138,6 @@ window.addEventListener('scroll',function(){
     moMenuGre.style.top = 30 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
-    moMenuBox.style.bottom = 25 + 'vh';
-  }
-  if(mobileScrolls > 800 && mobileScrolls < 900){
-    moOne.style.top = 28 + 'vh';
-    moMenuTwo.style.top = 29 + 'vh';
-    moMenuTom.style.top = 30 + 'vh';
-    moMenuPaty.style.top = 31 + 'vh';
-    moMenuOni.style.top = 31 + 'vh';
-    moMenuChe.style.top = 32 + 'vh';
-    moMenuGre.style.top = 33 + 'vh';
-    moMenuBox.style.bottom = 20 + 'vh';
-
+    moMenuBox.style.bottom = 10 + 'vh';
   }
 });
