@@ -113,6 +113,9 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     position: absolute;
     left: 20%; bottom: 40vh;
 }
+.mobilever{ display: none;}
+.pcVer{ display: block;}
+
 #burgerBox{
     width: 100%; height: 100%;
     position: relative;
@@ -124,6 +127,7 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     background-position: center;
     background-repeat: no-repeat;
 }
+/*pc 버전*/
 #burTop{
     background: url(../img/burger_breadTop.png);
     top: 0; z-index: 9;
@@ -156,6 +160,47 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     background: url(../img/burger_breadBottom.png);
     top: 35vh; z-index: 2;
 }
+
+/*모바일 버전*/
+
+#moburger{
+    width: 70vw; height: 100%;
+    position: absolute;
+    left: 20%; bottom: 40vh;
+}
+#burTopmo{
+    background: url(../img/burger_breadTop.png);
+    top: 0; z-index: 9;
+}
+#burCumo{
+    background: url(../img/burger_cucumber.png);
+    top: 5vh; z-index: 8;
+}
+#burTommo{
+    background: url(../img/burger_tomato.png);
+    top: 10vh; z-index: 7;
+}
+#burpatymo{
+    background: url(../img/burger_patty.png);
+    top: 15vh; z-index: 6;
+}
+#burOnimo{
+    background: url(../img/burger_onion.png);
+    top: 20vh; z-index: 5;
+}
+#burChemo{
+    background: url(../img/burger_cheese.png);
+    top: 25vh; z-index: 4;
+}
+#burGremo{
+    background: url(../img/burger_green.png);
+    top: 30vh; z-index: 3;
+}
+#burBomo{
+    background: url(../img/burger_breadBottom.png);
+    top: 35vh; z-index: 2;
+}
+
 
 
 
@@ -260,4 +305,6 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     #articleBottom {
         height: 70vh;
     }
+    .mobileVer{ display: block;}
+   .pcVer{ display: none;}
 }
