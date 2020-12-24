@@ -111,7 +111,7 @@ body{ overflow-x: hidden; background: #8ca7ac;}
 #burger{
     width: 50vw; height: 100%;
     position: absolute;
-    left: 20%; bottom: 20vh;
+    left: 20%; bottom: 40vh;
 }
 #burgerBox{
     width: 100%; height: 100%;
