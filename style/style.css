@@ -7,6 +7,20 @@ body{ overflow-x: hidden; background: #8ca7ac;}
 #wrap{
     width: 100vw; height:auto;
     overflow: hidden;
+    position: relative;
+}
+#wrap::before{
+    content: '';
+    display: block;
+    position: fixed;
+    background: url(../img/bg1.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden; 
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 0.3;
 }
 #header{
     width: 100vw; height: 70vh;
@@ -88,7 +102,7 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     background-position: center;
     left: -10%;
     top: -10vh;
-    z-index: 5;
+    z-index: 3;
     animation: car 10s infinite linear;
 }
 
@@ -113,8 +127,10 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     position: absolute;
     left: 20%; bottom: 40vh;
 }
-.mobilever{ display: none;}
-.pcVer{ display: block;}
+#moburger{ display: none;}
+#burger{ display: block;}
+
+
 
 #burgerBox{
     width: 100%; height: 100%;
@@ -203,7 +219,7 @@ body{ overflow-x: hidden; background: #8ca7ac;}
 
 
 
-
+/*pc버전*/
 #aline{
     width: 100%; height: 100%;
     position: absolute;
@@ -244,6 +260,52 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     right: 20%; top: 5vh;
 }
 
+/*mobile버전*/
+#alineMobile{ 
+    display: none;
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+
+}
+#aline{ display:block;}
+#alineBox{
+    width: 100%; height: 100%;
+    position: relative;
+}
+#alinemoBox > li{
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+#moalineOne{
+    background: url(../img/aline5.png);
+    width: 30vw; height: 30vh;
+    left: 10%; top: 0;
+    
+}
+#moalineTwo{
+    background: url(../img/aline3.png);
+    width: 30vw; height: 30vh;
+    left: 70%; top: 10vh;
+}
+#moalineThr{
+    background: url(../img/aline1.png);
+    width: 10vw; height: 10vh;
+    right: 30%; top: -5vh;
+}
+#moalineTir{
+    background: url(../img/aline2.png);
+    width: 20vw; height: 20vh;
+    right: 30%; top: 0vh;
+}
+
+
+
 #box{
     width: 100%; height: 100%;
     position: absolute;
@@ -255,6 +317,20 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     width: 100%; height: 100%;
     position: relative;
     overflow: hidden;
+    display: block;
+}
+#mosetCont{
+    display:none;
+    width: 100%; height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#mosetCont > li{
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-origin: center;
+    background-repeat: no-repeat;
 }
 #setCont > li{
     position: absolute;
@@ -279,13 +355,30 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     bottom: 1vh;
     
 }
-
+#mosetBoxbu{
+    width: 30vw; height: 30vh;
+    background: url(../img/pack_burger.png);
+    left: 50%; transform: translateX(-70%);
+    z-index: 1;
+    bottom: -5vh;
+    
+}
+#mosetBoxju{
+    width: 30vw; height: 50vh;
+    background: url(../img/pack_juice.png);
+    left: 50%; transform: translateX(-40%);
+    z-index: 0;
+    bottom: 1vh;
+    
+}
 @media screen and (max-width:800px){
-    #setBoxju {
-        width: 35vw; transform: translateX(-30%);
+    #mosetBoxju {
+        width: 40vw; transform: translateX(-30%);
+        left:80%; bottom: 0;
     }
-    #setBoxbu{
-        width: 50vw; left: 45%;
+    #mosetBoxbu{
+        width: 100vw; left: 30%;
+        bottom: 0; transform: translateX(-50%);
     }
     #alineTwo{
         left: 60%;
@@ -305,6 +398,19 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     #articleBottom {
         height: 70vh;
     }
-    .mobileVer{ display: block;}
-   .pcVer{ display: none;}
+    
+   #moburger{ display: block;}
+   #burger{ display: none;}
+   #alineMobile{ display: block;}
+   #aline{ display:none;}
+   #setCont{
+    display: none;
+    }
+   #mosetCont{
+    display:block;
+    }
+   #articleTop::before{
+    width: 500px; height: 1000px;
+    top: 100px;
+    }
 }

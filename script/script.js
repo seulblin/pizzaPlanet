@@ -25,12 +25,15 @@ let moMenuChe = document.getElementById('burChemo');
 let moMenuGre = document.getElementById('burGremo');
 let moMenuBo = document.getElementById('burBomo');
 
+let setBoxburger = document.getElementById('mosetBoxbu');
+let setBoxjuice = document.getElementById('mosetBoxju');
+
 window.addEventListener('scroll',function(){
  
   
   scrolls = doc.scrollTop - headers.clientHeight;
   mobileScrolls = doc.scrollTop
-  console.log(scrolls);
+  console.log(mobileScrolls);
   //pc버전
   if(scrolls > 400 && scrolls < 500){
     //console.log('빵');
@@ -76,7 +79,6 @@ window.addEventListener('scroll',function(){
     menuChe.style.top = 28 + 'vh';
     menuGre.style.top = 30 + 'vh';
     menuBo.style.top = 35 + 'vh';
-    menuBo.style.top = 35 + 'vh';
     menuBox.style.bottom = 25 + 'vh';
   }
   if(scrolls > 800 && scrolls < 900){
@@ -93,7 +95,7 @@ window.addEventListener('scroll',function(){
 
   
   //mobile버전
-  if(mobileScrolls > 400 && mobileScrolls < 500){
+  if(mobileScrolls > 200 && mobileScrolls < 300){
     //console.log('빵');
     moOne.style.top = 0 + 'vh';
     moMenuTwo.style.top = 5 + 'vh';
@@ -104,40 +106,48 @@ window.addEventListener('scroll',function(){
     moMenuGre.style.top = 30 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
     moMenuBox.style.bottom = 40 + 'vh';
+  
+    
   }
-  if(mobileScrolls > 500 && mobileScrolls < 600){
+  if(mobileScrolls > 300 && mobileScrolls < 400){
     //console.log('빵');
-    moOne.style.top = 7 + 'vh';
-    moMenuTwo.style.top = 8 + 'vh';
-    moMenuTom.style.top = 10 + 'vh';
-    moMenuPaty.style.top = 15 + 'vh';
-    moMenuOni.style.top = 20 + 'vh';
-    moMenuChe.style.top = 25 + 'vh';
-    moMenuGre.style.top = 30 + 'vh';
-    moMenuBo.style.top = 35 + 'vh';
-    moMenuBox.style.bottom = 30+ 'vh';
-  }
-  if(mobileScrolls > 600 && mobileScrolls < 700){
-    moOne.style.top = 14 + 'vh';
-    moMenuTwo.style.top = 15 + 'vh';
-    moMenuTom.style.top = 16 + 'vh';
-    moMenuPaty.style.top = 17 + 'vh';
-    moMenuOni.style.top = 20 + 'vh';
-    moMenuChe.style.top = 25 + 'vh';
-    moMenuGre.style.top = 30 + 'vh';
-    moMenuBo.style.top = 35 + 'vh';
-    moMenuBox.style.bottom = 20 + 'vh';
-  }
-  if(mobileScrolls > 700 && mobileScrolls < 800){
-    moOne.style.top = 21 + 'vh';
-    moMenuTom.style.top = 23 + 'vh';
-    moMenuTwo.style.top = 22 + 'vh';
-    moMenuPaty.style.top = 24 + 'vh';
-    moMenuOni.style.top = 25 + 'vh';
+    moOne.style.top = 10 + 'vh';
+    moMenuTwo.style.top = 18 + 'vh';
+    moMenuTom.style.top = 20 + 'vh';
+    moMenuPaty.style.top = 25 + 'vh';
+    moMenuOni.style.top = 28 + 'vh';
     moMenuChe.style.top = 28 + 'vh';
     moMenuGre.style.top = 30 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
+    moMenuBox.style.bottom = 30+ 'vh';
+    
+  }
+  if(mobileScrolls > 400 && mobileScrolls < 500){
+    moOne.style.top = 29 + 'vh';
+    moMenuTwo.style.top = 30 + 'vh';
+    moMenuTom.style.top = 31 + 'vh';
+    moMenuPaty.style.top = 30 + 'vh';
+    moMenuOni.style.top = 31 + 'vh';
+    moMenuChe.style.top = 34 + 'vh';
+    moMenuGre.style.top = 36 + 'vh';
     moMenuBo.style.top = 35 + 'vh';
+    moMenuBox.style.bottom = 20 + 'vh';
+    setBoxburger.style.left = 30+ '%';
+    setBoxjuice.style.left = 80+ '%';
+    
+  }
+  if(mobileScrolls > 500 && mobileScrolls < 600){
+    moOne.style.top = 31 + 'vh';
+    moMenuTom.style.top = 32 + 'vh';
+    moMenuTwo.style.top = 32 + 'vh';
+    moMenuPaty.style.top = 31 + 'vh';
+    moMenuOni.style.top = 32 + 'vh';
+    moMenuChe.style.top = 35 + 'vh';
+    moMenuGre.style.top = 37 + 'vh';
+    moMenuBo.style.top = 36 + 'vh';
     moMenuBox.style.bottom = 10 + 'vh';
+    setBoxburger.style.left = 40+ '%';
+    setBoxjuice.style.left = 70+ '%';
+    
   }
 });
