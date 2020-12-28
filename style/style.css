@@ -411,6 +411,6 @@ body{ overflow-x: hidden; background: #8ca7ac;}
     }
    #articleTop::before{
     width: 500px; height: 1000px;
-    top: 100px;
+    top: 100px; background-size: contain;
     }
 }
